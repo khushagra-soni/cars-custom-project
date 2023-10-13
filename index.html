@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Car Service Estimator</title>
+</head>
+<body>
+    <div id="background-image"></div>
+    <h1>Car Service Estimator</h1>
+    <form id="service-form">
+        <h2>Select Services:</h2>
+
+        <label>
+            <input type="checkbox" name="service" value="car-wash"> Car Wash - $50 (1 hour)
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="service" value="oil-change"> Oil Change - $25 (30 mins)
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="service" value="full-service"> Full Service - $100 (3 hours)
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="service" value="tyre-checking"> Tyre Checking - $5 (30 mins)
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="service" value="tyre-replacement"> Tyre Replacement - $30 per tire (1 hour per tire)
+        </label><br>
+
+        <h2>Enter the Number of Tires (if applicable):</h2>
+        <input type="number" id="tire-count" min="1" value="1">
+        <br>
+        <button type="button" onclick="calculateServiceCost()">Calculate Cost</button>
+    </form>
+
+    <div id="result">
+        <h2>Estimated Cost:</h2>
+        <p id="cost">$0</p>
+        <h2>Estimated Time:</h2>
+        <p id="time">0 hours</p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

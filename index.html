@@ -12,25 +12,45 @@
     <form id="service-form">
         <h2>Select Services:</h2>
 
-        <label>
-            <input type="checkbox" name="service" value="car-wash"> Car Wash - $50 (1 hour)
-        </label><br>
+        <label class="service-label">
+            <input type="checkbox" name="service" value="car-wash">
+            <div class="service-details">
+                <img src="images/car-wash.jpg" alt="Car Wash" class="service-image">
+                <span>Car Wash - $50 (1 hour)</span>
+            </div>
+        </label>
 
-        <label>
-            <input type="checkbox" name="service" value="oil-change"> Oil Change - $25 (30 mins)
-        </label><br>
+        <label class="service-label">
+            <input type="checkbox" name="service" value="oil-change">
+            <div class="service-details">
+                <img src="images/oil-change.jpg" alt="Oil Change" class="service-image">
+                <span>Oil Change - $25 (30 mins)</span>
+            </div>
+        </label>
 
-        <label>
-            <input type="checkbox" name="service" value="full-service"> Full Service - $100 (3 hours)
-        </label><br>
+        <label class="service-label">
+            <input type="checkbox" name="service" value="full-service">
+            <div class="service-details">
+                <img src="images/full-service.jpg" alt="Full Service" class="service-image">
+                <span>Full Service - $100 (3 hours)</span>
+            </div>
+        </label>
 
-        <label>
-            <input type="checkbox" name="service" value="tyre-checking"> Tyre Checking - $5 (30 mins)
-        </label><br>
+        <label class="service-label">
+            <input type="checkbox" name="service" value="tyre-checking">
+            <div class="service-details">
+                <img src="images/tyre-checking.jpg" alt="Tyre Checking" class="service-image">
+                <span>Tyre Checking - $5 (30 mins)</span>
+            </div>
+        </label>
 
-        <label>
-            <input type="checkbox" name="service" value="tyre-replacement"> Tyre Replacement - $30 per tire (1 hour per tire)
-        </label><br>
+        <label class="service-label">
+            <input type="checkbox" name="service" value="tyre-replacement">
+            <div class="service-details">
+                <img src="images/tyre-replacement.jpg" alt="Tyre Replacement" class="service-image">
+                <span>Tyre Replacement - $30 per tire (1 hour per tire)</span>
+            </div>
+        </label>
 
         <h2>Enter the Number of Tires (if applicable):</h2>
         <input type="number" id="tire-count" min="1" value="1">

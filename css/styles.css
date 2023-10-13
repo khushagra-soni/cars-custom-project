@@ -5,16 +5,16 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-image: url('images/background-image.jpg'); /* Path to your background image */
+    background-image: url('images/background-image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    color: #333;
+    color: white;
 }
 
 h1 {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -23,10 +23,11 @@ h1 {
     max-width: 400px;
     position: relative;
     z-index: 1;
+    color: lightblue;
 }
 
 form {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -37,9 +38,21 @@ form {
     z-index: 1;
 }
 
-label {
+.service-label {
     display: block;
     margin-bottom: 10px;
+    color: lightblue;
+}
+
+.service-details {
+    display: flex;
+    align-items: center;
+}
+
+.service-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
 
 input[type="number"] {
@@ -47,7 +60,7 @@ input[type="number"] {
 }
 
 button {
-    background-color: #333;
+    background-color: darkblue;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -55,7 +68,7 @@ button {
 }
 
 #result {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -64,4 +77,5 @@ button {
     max-width: 400px;
     position: relative;
     z-index: 1;
+    color: lightblue;
 }
